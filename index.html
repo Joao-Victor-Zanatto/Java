@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fórum temático</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Document</title>
 </head>
 <body>
-  <h1 name="hello">Ola, mundo</h1>
-  <p class="parag">A soma é essa que ta no titulo</p>
-  <button id="buttonHello"> clica ai</button>
+    <div>
+        <h1>Faça uma mensagem de "Olá Mundo"</h1>
+        <button onclick="add_ola_mundo()">Gerar texto</button>
+        <p id="texto1"></p>
+    </div>
+    <hr>
+    
+    <div>
+        <h1>Faça uma saída de soma de 2 inteiros</h1>
+        <p>Numero 1:</p><input id="num1_att2" type="number">
+        <p>Numero 2:</p><input id="num2_att2" type="number">
+        <br>
+        <button onclick="gerar_calc()">Resultado</button>
+        <p id="res_att2">O resultado é: </p>
+    </div>
+    <hr>
+    
+    <div>
+        <h1 id="alterarPorId">Altera a propriedade de um elemento por id</h1>
+        <button onclick="alt_id()">Alterar</button>
+    </div>
+    <hr>
+    
+    <div name="alterarPorName">
+        <h1>Altera a propriedade de um elemento por name</h1>
+        <button onclick="alt_name()">Alterar</button>
+    </div>
+    <hr>
+    
+    <div class="alterarPorClass">
+        <h1>Altera a propriedade de um elemento por class</h1>
+        <button onclick="alt_class()">Alterar</button>
+    </div>
+    <hr>
 </body>
-<script src="script.js"></script>
 </html>
