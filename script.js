@@ -1,4 +1,4 @@
-function add_ola_mundo() {
+function ola_mundo() {
     document.getElementById("texto1").innerText = "Olá Mundo";
 }
 
